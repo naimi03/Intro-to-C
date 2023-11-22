@@ -1,4 +1,4 @@
-# Assignment 5 - Public Key Cryptography
+# Project - Public Key Cryptography
 
 This program contains the implementation of RSA algorithm for encryption and decryption.
 
@@ -40,37 +40,21 @@ $ ./keygen [-:b:i:n:d:s:vh] [-b minimum number of bits] [-i iterations] [-n publ
 To encrypt the file, run:
 
 '''
-$ ./encypt [-:i:o:n:vh] [-i input file] [-o output file] [-n public key file]
+$ ./encrypt [-:i:o:n:vh] [-i input file] [-o output file] [-n public key file]
 '''
 
 To decrypt the file run:
 
 '''
-$ ./encypt [-:i:o:n:vh] [-i input file] [-o output file] [-n private key file]
+$ ./decrypt [-:i:o:n:vh] [-i input file] [-o output file] [-n private key file]
 '''
 
-## Files
 
-randstate.h - header file for randstate.c
+## Notes
 
-randstate.c - contains the interface for creating and clearing the random number generator.
+This was an assignment for Professor Darell Long at UCSC in Winter '23 for CSE 13S. For help when running the file, please run
 
-numtheory.h - header file for numtheory.c
 
-numtheory.c - contains the implementation of number theoretic functions.
-
-ss.h - header file for ss.c
-
-ss.c - contains the implementation of function for rsa encryption and decryption.
-
-keygen.c - the interface for creating public and private key files.
-
-encrypt.c - the interface for encrypting files.
-
-encrypt.c - the interface for decrypting files.
-
-Makefile - file to make or build the program.
-
-DESIGN.pdf - contains the intial and final design for all the above files
-
-WRITEUP.pdf - contains discussion on my difficulties with this assignment
+'''
+$ ./keygen -h  (or)   $ ./encrypt -h (or)  $ ./decrypt -h
+'''
